@@ -30,6 +30,14 @@ app.get('/confirm', function (req, res) {
 	res.status(400).send("Invalid Email.");
 });
 
+app.get('/terms', function(req,res) {
+	res.send("Terms");
+});
+
+app.get('/privacy-policy', function(req,res) {
+	res.send("Privacy Policy");
+});
+
 app.listen(80);
 
 function validEmail(email) {
