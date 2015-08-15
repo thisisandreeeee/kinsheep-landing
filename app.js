@@ -6,6 +6,8 @@ var app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.set('view engine', 'html');
+
 app.get('/', function (req, res) {
 	res.sendFile(__dirname + '/index.html');
 });
@@ -18,7 +20,7 @@ app.get('/confirm', function (req, res) {
 		if (fileJSON.indexOf(email) < 0) {
 			fileJSON.push(email);
 			fs.writeFileSync(__dirname + '/signups.json', JSON.stringify(fileJSON));
-			res.send("Signed Up!")
+			res.send("Signed Up!");
 		} else {
 			res.status(400).send("Already Signed Up.");
 			return;

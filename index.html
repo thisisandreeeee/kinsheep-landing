@@ -28,16 +28,16 @@
     <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon-180x180.png">
-	-->
-	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="images/favicon/favicon-194x194.png" sizes="194x194">
-	<link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96">
-	<link rel="icon" type="image/png" href="images/favicon/android-chrome-192x192.png" sizes="192x192">
-	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="images/favicon/manifest.json">
-	<meta name="msapplication-TileColor" content="#5abae9">
-	<meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
-	<meta name="theme-color" content="#ffffff">
+-->
+<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favicon/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="images/favicon/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#5abae9">
+<meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
     <!--[if lt IE 9]>
     	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     	<![endif]-->
@@ -60,49 +60,83 @@
     ============================================= -->
     <div id="wrapper" class="clearfix">
 
-    	<section id="slider" class="slider-parallax full-screen">
-    		<div class="full-screen">
+    	<!-- Header
+    	===================
+    	<header id="header" class="transparent-header semi-transparent full-header">
+
+    		<div id="header-wrap">
+
     			<div class="container clearfix">
 
-    				<img src="images/hand-mock.png" alt="Image" class="hidden-sm hidden-xs notopmargin" data-style-lg="position: absolute; left: 0; bottom: 0; height: 600px;" data-style-md="position: absolute; left: 0; bottom: 0; height: 450px;">
+    				<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-    				<div class="vertical-middle no-fade">
-    					<div class="col-md-6 fright nobottommargin" data-animate="fadeIn">
+                    <div id="logo" style="border-color:white;">
+                    	<a href="/index" class="standard-logo"><img src="images/kinsheep-square-logo-blue.png" alt="Kinsheep Logo"></a>
 
-    						<img src="images/kinsheep-banner.jpg" />
+                    <nav id="primary-menu">
 
-    						<div class="hidden-xs">
-    							<h1 class="med-grey">The exclusive <span>Kinsheep</span> beta launch.
-    								Instantly <strong>connect</strong> with nearby professionals and keep in touch.
-    							</h1>
+                    	<ul>
+                    	</ul>
 
-    							<div class="input-group input-group-lg divcenter" style="max-width:600px;">
-    								<input type="email" name="email" class="form-control required email" placeholder="Enter your Email" aria-required="true">
-    								<span class="input-group-btn">
-    									<button class="btn btn-info" type="submit">Yes Please!</button>
-    								</span>
-    							</div>
-    						</div>
+                        <div id="top-search">
+                            <a href="#" id="top-search-trigger"><i class="icon-line2-rocket"></i><i class="icon-line-cross"></i></a>
+                            <form action="/confirm" method="GET">
+                                <input type="email" name="email" class="form-control" value="" placeholder="Enter your Email &amp; hit Enter">
+                            </form>
+                        </div>
 
-    						<div class="visible-xs">
+                    </nav>
 
-    							<h3 class="med-grey">Instantly <strong>connect</strong> with nearby professionals and keep in touch with <span>Kinsheep</span> beta!</h3>
+                </div>
 
-    							<div class="input-group input-group-lg divcenter" style="max-width:600px;">
-    								<input type="email" name="email" class="form-control required email" placeholder="Enter your Email" aria-required="true">
-    								<span class="input-group-btn">
-    									<button class="btn btn-info" type="submit">Go!</button>
-    								</span>
-    							</div>
-    						</div>
+            </div>
 
-    					</div>
-    				</div>
+        </header> --> 
+        <!-- #header end -->
 
-    			</div>
+        <section id="slider" class="slider-parallax full-screen">
+        	<div class="full-screen">
+        		<div class="container clearfix">
 
-    		</div>
-    	</section>
+        			<img src="images/hand-mock.png" alt="Image" class="hidden-sm hidden-xs notopmargin" data-style-lg="position: absolute; left: 0; bottom: 0; height: 600px;" data-style-md="position: absolute; left: 0; bottom: 0; height: 450px;">
+
+        			<div class="vertical-middle no-fade">
+        				<div class="col-md-6 fright nobottommargin" data-animate="fadeIn">
+
+        					<img src="images/kinsheep-banner.jpg" />
+
+        					<div class="hidden-xs">
+        						<h1 class="med-grey">The exclusive <span>Kinsheep</span> beta launch.
+        							Instantly <strong>connect</strong> with nearby professionals and keep in touch.
+        						</h1>
+
+        						<form class="input-group input-group-lg divcenter" style="max-width:600px;" action="/confirm" method="GET">
+        							<input type="email" name="email" class="form-control required email" placeholder="Enter your Email" aria-required="true" value="">
+        							<span class="input-group-btn">
+        								<button class="btn btn-info" type="submit">Yes Please!</button>
+        							</span>
+        						</form>
+        					</div>
+
+        					<div class="visible-xs">
+
+        						<h3 class="med-grey">Instantly <strong>connect</strong> with nearby professionals and keep in touch with <span>Kinsheep</span> beta!</h3>
+
+        						<form class="input-group input-group-lg divcenter" style="max-width:600px;" action="/confirm" method="GET">
+        							<input type="email" name="email" class="form-control required email" placeholder="Enter your Email" aria-required="true">
+        							<span class="input-group-btn">
+        								<button class="btn btn-info" type="submit">Go!</button>
+        							</span>
+        						</form>
+        					</div>
+
+        				</div>
+        			</div>
+
+        		</div>
+
+        	</div>
+        </section>
 
         <!-- Content
         ============================================= -->
@@ -156,14 +190,16 @@
 
         				<div class="col_half nobottommargin topmargin-sm col_last">
 
-        					<div class="heading-block topmargin">
+        					<div class="heading-block topmargin bottommargin-sm">
         						<h2>A new way to experience social networks</h2>
-        						<span>Embrace spontaneous interactions within your locale</span>
+        						<span>Embrace spontaneous interactions within your community</span>
         					</div>
 
-        					<p style="font-size: 16px">In a world where people are equally accomplished, networking has become increasingly important. One cannot predict when a job offer or collaboration opportunity presents itself, and such chances are improved by building a diverse network. Yet, connecting with people you have just met isn't as easy as it should be. Life is hard. Why make it harder?</p>
+        					<p style="font-size: 18px">Kinsheep started with the idea that a location-based social network could help improve the quality of professional interactions.</p>
 
-        					<p style="font-size: 16px">If you are a person who appreciates the value of such interactions, Kinsheep would like to invite you to join a community of like-minded and driven individuals.</p>
+        					<p style="font-size: 18px">By facilitating productive conversations, we strive to foster a community of well-connected and driven individuals.</p>
+
+        					<p style="font-size: 20px">Life is hard. Why make it harder?</p>
 
         					<a href="#" data-scrollto="#call-to-action" class="button button-border button-rounded button-large button-dark noleftmargin">Register for Beta</a>
 
@@ -178,12 +214,12 @@
         				<div class="heading-block center">
         					<h2>A network that maximizes the value of your location</h2>
         					<span>Coming to you soon on iOS</span>
-        					<div class="input-group input-group-lg divcenter topmargin-sm" style="max-width:600px;" id="call-to-action">
+        					<form class="input-group input-group-lg divcenter topmargin-sm" style="max-width:600px;" id="call-to-action" action="/confirm" method="GET">
         						<input type="email" name="email" class="form-control required email" placeholder="Enter your Email" aria-required="true">
         						<span class="input-group-btn">
         							<button class="btn btn-info" type="submit">Register</button>
         						</span>
-        					</div>
+        					</form>
         				</div>
 
         				<div style="position: relative; margin-bottom: -60px;" data-height-lg="415" data-height-md="342" data-height-sm="262" data-height-xs="160" data-height-xxs="102">
