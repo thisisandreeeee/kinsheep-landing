@@ -68,12 +68,17 @@
     	<div style="width:80%; margin-left:auto; margin-right:auto;">
 
     		<div class="col_one_third">
-    			<img src="images/kinsheep-square-logo-grey.png" />
+    			<div class="hidden-xs">
+                    <img src="images/invalid-logo.png" />
+                </div>
+                <div class="visible-xs" style="width:50%; height:auto; margin-left:auto; margin-right:auto;">
+                    <img src="images/invalid-logo.png" />
+                </div>
     		</div>
 
     		<div class="col_two_third col_last">
     			<h1>Uh oh...</h1>
-    			<h3>You have entered an invalid email address, please try again</h3>
+    			<h3>You have entered an invalid email address, <span>please try again</span></h3>
 
     			<form class="input-group input-group-lg divcenter topmargin-sm" action="/confirm" method="GET">
     				<input type="email" name="email" class="form-control required email" placeholder="Enter your Email" aria-required="true">
