@@ -22,6 +22,7 @@ app.get('/confirm', function (req, res) {
 			fileJSON.push(email);
 			fs.writeFileSync(__dirname + '/signups.json', JSON.stringify(fileJSON));
 			res.sendFile(path.join(__dirname, '/views', '/success.html'));
+			return;
 		} else {
 			res.status(400).sendFile(path.join(__dirname, '/views', '/duplicate.html'));
 			return;
