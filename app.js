@@ -40,6 +40,10 @@ app.get('/privacy-policy', function(req,res) {
 	res.sendFile(path.join(__dirname, '/views', '/privacy-policy.html'));
 });
 
+app.get('/prelaunch', function(req,res) {
+	res.sendFile(path.join(__dirname, '/views', '/prelaunch.html'));
+});
+
 app.listen(80);
 
 function validEmail(email) {
