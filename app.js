@@ -44,7 +44,7 @@ app.get('/prelaunch', function(req,res) {
 	res.sendFile(path.join(__dirname, '/views', '/prelaunch.html'));
 });
 
-app.listen(80);
+app.listen(8080);
 
 function validEmail(email) {
 	var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm;
